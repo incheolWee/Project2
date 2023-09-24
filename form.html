@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>학생 인적사항 입력</h2>
+
+    <form action="text_ok.php">
+        <fieldset style='width:500px;margin:5px'>
+            <legend>개인정보입력</legend>
+            이름: <input type="text" id="name" name="name" placeholder="이름을 입력하세요"><br>
+            학번: <input type="text" id="studentID" name="studentID" placeholder="학번을 입력하세요"><br><br>
+            성별: 남<input type=radio name=gender value=m>
+            여<input type=radio name=gender value=w><br><br>
+
+            입학 날짜: <input type=date name=enterday><br><br>
+
+            전공: <select name="major">
+                <option value="1">인문계</option>
+                <option value="2">자연계</option>
+                <option value="3">공학</option>
+                <option value="4">예술계</option>
+            </select><br><br>
+
+            특이 사항:<br><textarea name="opinion" cols="30" rows="5"></textarea><br>
+
+            확인여부: 개인정보 수집을 동의합니다<br>
+            확인하였습니다<input type=checkbox name=agree value=1><br>
+            <br>
+
+            <input type="submit" value="제출">
+            <input type="reset" value="취소"><br>
+    </form>
+
+    <p>완료가 되면 제출버튼을 입력해주세요. 감사합니다.</p>
+
+</body>
+
+</html>
